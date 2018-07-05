@@ -29,7 +29,7 @@ while True:
         #recognize 
         faceID, conf = recognizer.predict(roi_gray)
         #print(conf)
-        if conf >= 5 and conf <= 80:
+        if conf >= 5 and conf <=90:
             #print(faceID)
             #print(labels[faceID].replace("-"," ").title())
             font = cv2.FONT_HERSHEY_SIMPLEX
@@ -37,12 +37,14 @@ while True:
             color = (255, 255, 255)
             stroke = 2
             cv2.putText(img, name, (x,y), font, 1, color, stroke, cv2.LINE_AA)
+            #print(str(name)+" : "+str(conf))
         else:
             font = cv2.FONT_HERSHEY_SIMPLEX
             name = "Unknown"
             color = (255, 255, 255)
             stroke = 2
             cv2.putText(img, name, (x,y), font, 1, color, stroke, cv2.LINE_AA)
+            #print(str(name)+" : "+str(conf))
         #To Save The Face Just UnComment this Line and that i variable Up There in Line 12
         #roi_gray = img[y:y+h , x:x+w]
         #img_item = "img/number_"+str(i)+".png"
@@ -63,3 +65,4 @@ while True:
 
 cap.release()
 cv2.destroyAllWindows()
+
