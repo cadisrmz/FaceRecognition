@@ -1,3 +1,7 @@
+"""Important :
+For Every Persone you collect his picture make it in one folder by the name of the persone that u want track in the video
+"""
+
 import numpy as np
 from PIL import Image
 import os, cv2, pickle
@@ -6,7 +10,14 @@ faceCascade = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
 recognizer = cv2.face.LBPHFaceRecognizer_create()
 
 mainDir = os.path.dirname(os.path.abspath(__file__))
+
+################## Warning ##################
 imageDir = os.path.join(mainDir,"img")
+#mainDir is the Direction of the Current file in the System
+#mainDir is Like this '/home/exemple/Desktop'
+#and the second argument is the direction of the piucture file
+#change it if you want change the direction
+#############################################
 
 current_id =0
 label_dec = {}
