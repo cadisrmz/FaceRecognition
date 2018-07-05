@@ -2,9 +2,13 @@
 Face Recognition from it's name you can guess 
 It Do Like This 
 ![1](https://c.top4top.net/p_916bw9o81.png)
+
 ![2](https://b.top4top.net/p_916ro3mq1.png)
+
 ![3](https://c.top4top.net/p_916bxs822.png)
+
 ![4](https://d.top4top.net/p_9165nbb03.png)
+
 ## Important 
 For Every Persone you collect his picture make it in one folder by the name of the persone that u want track in the video
 
@@ -27,6 +31,6 @@ and for trainner.py in the line 15 :
   and the second argument is the direction of the piucture file
   change it if you want change the direction
   
-##Anythink Else
+## Anythink Else
 Yeah If you Have Any experience in deep learning using tensorflow or pytorch ou keras
 you can you use them to make your own neural network and will predict better than this
