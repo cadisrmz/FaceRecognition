@@ -15,7 +15,15 @@ with open("labels.pkl","rb") as f:
     labelsH = pickle.load(f)
     labels = {v:k for k,v in labelsH.items()}
 
+############ Warning  #####################
 cap = cv2.VideoCapture("OverMyHead.mp4")
+#for this line if you want use the input of the video is camera live steam 
+#put this code :
+#cap = cv2.VideoCapture(0)
+#And if you wnat an other video just replace the argument in cap 
+#like this:
+#cap = cv2.VideoCapture("myVideo.mp4")
+###########################################
 
 #i = 0
 
@@ -66,3 +74,5 @@ while True:
 cap.release()
 cv2.destroyAllWindows()
 
+
+#Unknown : 96.97343204015465
